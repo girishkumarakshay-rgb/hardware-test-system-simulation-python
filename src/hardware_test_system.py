@@ -4,13 +4,6 @@ from datetime import datetime
 from pathlib import Path
 
 
-# ---------------------------------------------------------
-# Python-Based Automated Hardware Test System Simulation
-# ---------------------------------------------------------
-# This project simulates a real hardware validation workflow.
-# It checks voltage, current, temperature, and sensor output
-# and generates a PASS/FAIL test report.
-# ---------------------------------------------------------
 
 
 def generate_device_readings(device_id):
@@ -172,7 +165,7 @@ def main():
         all_results.append(final_result)
         print_result(final_result)
 
-    # Create results folder if it does not exist
+    
     project_root = Path(__file__).resolve().parent.parent
     results_folder = project_root / "results"
     results_folder.mkdir(exist_ok=True)
